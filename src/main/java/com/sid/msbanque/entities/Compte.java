@@ -20,4 +20,6 @@ public class Compte {
     @Enumerated(EnumType.STRING)
     @Column(length=50)
     private TypeCompte type;
+    @ManyToOne
+    private Client client;
 }
